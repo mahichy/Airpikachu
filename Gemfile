@@ -13,15 +13,18 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
-group :development, :test do 
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
+group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-group :development do 
+group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
-group :test do 
+group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
