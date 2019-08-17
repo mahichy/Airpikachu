@@ -37,3 +37,5 @@ gem 'bootstrap-sass', '~> 3.4.1'
 
 gem 'devise', '~> 4.2'
 
+gem 'toastr-rails','~> 1.0'
+
