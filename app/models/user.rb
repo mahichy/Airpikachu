@@ -11,6 +11,8 @@ class User < ApplicationRecord
 
           user = User.where(email: auth.info.email).first
 
+          has_many :rooms
+
             if user
               return user
             else
