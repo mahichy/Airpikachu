@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+ 
   get 'pages/home'
   root 'pages#home'
 
@@ -13,5 +14,15 @@ Rails.application.routes.draw do
   
 
   resources :users, only: [:show]
+  resources :rooms, except: [:edit] do 
+    member do
+        get 'listing'
+        get 'pricing'
+        get 'description'
+        get 'photo_upload'
+        get 'amenities'
+        get 'location'
+      end
+  end
  
 end
