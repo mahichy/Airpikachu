@@ -32,7 +32,7 @@ class RoomsController < ApplicationController
   def description 
   end
 
-  def phote_uptoad
+  def photo_upload
   end
 
   def amenities
