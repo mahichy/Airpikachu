@@ -28,8 +28,13 @@ gem 'toastr-rails','~> 1.0'
 
 gem 'omniauth', '~>1.6'
 gem 'omniauth-facebook', '~>4.0'
+
 gem 'hirb'
+
 gem 'paperclip','~>5.1.0'
+
+
+gem 'geocoder', '~>1.4'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

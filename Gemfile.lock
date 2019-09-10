@@ -95,6 +95,7 @@ GEM
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
     ffi (1.11.1-x64-mingw32)
+    geocoder (1.5.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hashie (3.6.0)
@@ -256,6 +257,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.2)
   duktape
+  geocoder (~> 1.4)
   hirb
   jbuilder (~> 2.5)
   jquery-rails
