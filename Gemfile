@@ -15,7 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
+
 
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -32,9 +32,16 @@ gem 'omniauth-facebook', '~>4.0'
 gem 'hirb'
 
 gem 'paperclip','~>5.1.0'
+gem 'aws-sdk', '~>2.8'
 
 
 gem 'geocoder', '~>1.4'
+gem 'jquery-ui-rails','~>5.0'
+
+
+
+
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
