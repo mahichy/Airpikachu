@@ -67,6 +67,8 @@ class RoomsController < ApplicationController
     render json: reservations
    end
 
+   
+
   private
   def set_room 
     @room = Room.find(params[:id])
