@@ -11,12 +11,23 @@
                       <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand" href="#">AirPikachu</a>
+                    
+                    <%= link_to "AirPikachu", root_path, class: "navbar-brand" %>
                   </div>
 
                   
                   <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav navbar-right">
+
+                      <li>
+                        <button  class="btn btn-form btn-small">
+                          <%= link_to "Become a host ", new_room_path, style: "color: white; text-decoration: none;" %>
+                          
+                        </button>
+                      </li>
+
+
+
 
                     <% if (!user_signed_in?)%>
                         <li><%= link_to "Login", new_user_session_path  %></li>
@@ -31,10 +42,10 @@
                       </a>
 
                     <ul class="dropdown-menu">
-                      <li><a href="#">Manage Listing</a></li>
-                      <li><a href="#">List Your Space</a></li>
-                      <li><a href="#">Your Reservation </a></li>
-                      <li><a href="#">Your Trips </a></li>
+                      <li><%= link_to "Mange Listing", rooms_path %></li>
+                      <li><%= link_to "List Your Space", new_room_path %></li>
+                      <li><%= link_to "Your Reservation", your_reservations_path %></li>
+                      <li><%= link_to "Your Trip", your_trips_path %></li>
                       <li role="separator" class="divider"></li>
                         <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
                         <li> <%= link_to "Log Out", destroy_user_session_path, method: :delete %> </li>
