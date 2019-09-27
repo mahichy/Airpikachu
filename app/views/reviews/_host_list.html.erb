@@ -1,4 +1,4 @@
-<%= if @host_reviews.count == 0 %>
+<% if @host_reviews.count == 0 %>
 	<div class="text-center">
 		<h4>There are no reviews</h4>
 	</div>
@@ -15,7 +15,7 @@
 				<div><%= r.star %></div>
 					<% if current_user && current_user == r.host %>
 						<span class="pull-right">
-							<%= link_to r, method: :delete :data {confirm: "Are you sure?"} do %>
+							<%= link_to r, method: :delete, data: {confirm: "Are you sure?"} do %>
 								<i class="fa-trash-o fa-lg"></i>
 							<% end %>
 						</span>
