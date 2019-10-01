@@ -213,6 +213,7 @@ appearance: none;
 }
 
 //PHOTO UPLOAD
+
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -239,7 +240,7 @@ appearance: none;
     width: 100%
 }
 
-//room show
+
 
 .amenities li {
     margin-bottom: 10px;
@@ -254,7 +255,8 @@ appearance: none;
 }
 
 
-//RESERVATIONS
+
+
 .reservation-table td {
     width: 100%;
     border: none;
@@ -279,6 +281,31 @@ appearance: none;
     font-size: 14px;
     padding-top: 10px;
 }
+
+//SEARCH
+
+#main {
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#left {
+    padding: 10px 400px 10px 20px;
+    overflow: scroll;
+    height: 100%;
+
+}
+
+#right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    
+}
+
 
 
 
