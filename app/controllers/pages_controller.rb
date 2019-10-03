@@ -16,7 +16,7 @@ class PagesController < ApplicationController
       @rooms_address = Room.where(active: true).all
     end
 
-    # STEP 3
+    
     @search = @rooms_address.ransack(params[:q])
     @rooms = @search.result
 
