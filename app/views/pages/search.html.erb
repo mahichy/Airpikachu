@@ -3,9 +3,9 @@
 		<!-- SEARCH PANEL -->
 		<div class="row">
 			<br>
-			<div class="collapse id="collapsePanel">
+			<div id="collapsePanel">
 
-				<%= search_from_for @search, url: search_path do |f| %>
+				<%= search_form_for @search, url: search_path do |f| %>
 
 						<div class="row">
 							<div class="col-md-8">
